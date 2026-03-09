@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelloWorld Community</title>
+  <link rel="preload" as="image" href="Multimedia/About/logoHW.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar">
+
+    <!-- Logo que redirige al inicio -->
+    <a href="index.html" class="logo">
+      <img src="Multimedia/About/logoHW.png" alt="HelloWorld Logo" width="80" height="80">
+    </a>
+
+    <!-- Checkbox usado para activar el menú responsive -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- Icono hamburguesa visible en móviles -->
+    <label for="menu-toggle" class="menu-icon">
+      ☰
+    </label>
+
+    <!-- Enlaces de navegación -->
+    <ul class="nav-links">
+      <li><a href="historia.html">Historia</a></li>
+      <li><a href="about.html">Quiénes somos</a></li>
+      <li><a href="projects.html">Proyectos</a></li>
+      <li><a href="miembros.html">Miembros</a></li>
+      <li><a href="EVENTOS.html">Eventos</a></li>
+      <li><a href="QUIZ.html">Quiz interactivo</a></li>
+      <li class="join"><a href="Registro.html">Unirse</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- HERO / PANTALLA PRINCIPAL -->
+  <section class="hero">
+    <!-- Imagen de fondo como <img> para que el browser la precargue (mejor LCP) -->
+    <img
+      src="Multimedia/About/fondo_pag.png"
+      alt=""
+      class="hero-bg-img"
+      fetchpriority="high"
+      width="1920"
+      height="1080"
+    >
+    <div class="hero-content">
+      <h1>HelloWorld Community</h1>
+      <p>Aprende tecnología, crea proyectos y participa en hackatones.</p>
+      <a href="Registro.html" class="hero-btn">Unirse</a>
+    </div>
+  </section>
+
+</body>
+
+</html>
